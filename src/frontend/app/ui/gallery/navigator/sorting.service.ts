@@ -263,7 +263,7 @@ export class GallerySortingService {
                                 Config.Gallery.enableDirectorySortingByDate === true
                             ) {
                               c.directories.sort(
-                                  (a, b) => (a.oldestMedia || a.lastModified) - (b.oldestMedia || b.lastModified)
+                                  (a, b) => a.lastModified - b.lastModified
                               );
                               break;
                             }
